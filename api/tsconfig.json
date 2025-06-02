@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                          // Define o alvo de compilação do JavaScript
+      "module": "commonjs",                      // Define o sistema de módulos
+      "strict": true,                            // Ativa verificações estritas de tipo
+      "esModuleInterop": true,                   // Habilita a interoperabilidade com módulos ES
+      "skipLibCheck": true,                      // Pula a verificação de tipos de arquivos de declaração
+      "forceConsistentCasingInFileNames": true,  // Força o uso consistente de maiúsculas e minúsculas nos nomes de arquivos
+      "typeRoots": ["./node_modules/@types", "./src/types"] // Define onde procurar arquivos de declaração de tipos
+    },
+    "include": ["src/**/*"] // Inclui todos os arquivos TypeScript no diretório src
+  }
