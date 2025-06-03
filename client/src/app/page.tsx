@@ -170,7 +170,7 @@ export default function LoginPage() {
         <p className="mt-8 text-center text-sm text-gray-400 select-none">
           Emails válidos: <br />
           <span className="font-mono">funcionario@gmail.com</span>,{" "}
-          <span className="font-mono">supervisor@gmail.com</span>,{" "}
+          <span className="font-mono">supervisor1@gmail.com</span>,{" "}
           <span className="font-mono">gerente@gmail.com</span>
         </p>
       </div>

@@ -74,7 +74,7 @@ const taskRoutes = async (fastify: FastifyInstance) => {
   // GET Geral - Tarefas não realizadas
   fastify.get("/tasks/pending", async (_request: FastifyRequest, reply: FastifyReply) => {
     try {
-      const tasks = await db.any("SELECT * FROM public.tasks WHERE estado != 'realizada' ORDER BY titulo");
+      const tasks = await db.any("SELECT * FROM public.tasks WHERE estado != 'concluída' ORDER BY titulo");
       reply.send(tasks);
     } catch (error) {
       console.error("Erro ao buscar tarefas pendentes:", error);

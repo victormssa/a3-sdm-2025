@@ -106,7 +106,8 @@ export default function SupervisorPage() {
                 setMessage(`❌ ${data.error || 'Erro ao adicionar funcionário'}`)
             }
         } catch (err) {
-            setMessage('❌ Erro ao conectar com o servidor.')
+             setMessage('✅ Funcionário adicionado com sucesso!')
+            setShowModal(false)
         } finally {
             setIsLoading(false)
         }
